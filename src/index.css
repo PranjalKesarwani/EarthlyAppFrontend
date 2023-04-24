@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,300&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 8px;
+}
+
+/*Code for new Navigation*/
+
+
+
+#navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px 30px;
+  position: relative;
+  background-color: #CFFF8D;
+  font-family: 'Poppins', sans-serif;
+}
+
+#navigation div {
+  display: flex;
+  align-items: center;
+}
+
+#navigation img {
+  width: 50px;
+}
+
+#navigation p {
+  display: flex;
+  font-size: 4.6rem;
+  padding-left: 20px;
+}
+
+#newNavPages {
+  display: flex;
+  position: absolute;
+  right: 30px;
+}
+
+#newNavPages li {
+  list-style: none;
+  padding: 0px 20px;
+}
+
+#newNavPages li a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+}
+
+#newNavPages li a:hover {
+  color: #146356;
+  font-size: 2.52rem;
+}
+
+#cart {
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  color: #146356;
+}
+
+#cart:hover {
+  background-color: #146356;
+  color: white;
+}
+
+#navigation #newHamburger {
+  display: none;
+}
+
+.newBurger {
+  padding: 5px;
+  width: 35px;
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  display: none;
+}
+
+.newBurger:hover {
+  cursor: pointer;
+}
+
+.newBar {
+  background-color: yellow;
+  border-radius: 40px;
+}
+
+#newBar1 {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  margin: 3px
+}
+
+#newBar2 {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  margin: 3px
+}
+
+#newBar3 {
+  width: 23px;
+  height: 3px;
+  background-color: white;
+  margin: 3px
+}
+
+.icon #newBar1 {
+  transform: translateY(6px) rotate(-45deg);
+  transition: 0.3s ease;
+  background-color: red;
+}
+
+.icon #newBar2 {
+  opacity: 0;
+
+}
+
+.icon #newBar3 {
+  transform: translateY(-6px) rotate(45deg);
+  transition: 0.3s ease;
+  background-color: red;
+
+}
+.link{
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+/*Code for background image*/
+
+#bgImage {
+  background-image: url('../public/images/2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20vw;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+#bgImage h2 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  font-size: 5vw;
+  width: 100%;
+  margin-top: 0;
+}
+
+#hash {
+  color: #fff;
+}
+
+.one {
+  color: F9F9F9;
+}
+
+#earth {
+  color: #C5D8A4;
+}
+
+#chance {
+  color: #C5D8A4;
+}
+
+/*Code for cards*/
+
+#cardSection {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.cards {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  width: 96%;
+  background-color: #fff;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  width: 23%;
+  height: 29vw;
+  min-width: 220px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid #CFD2CF;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin: 30px;
+  cursor: pointer;
+}
+
+.card:hover {
+
+  box-shadow: 0 3px 15px rgb(0 0 0 / 0.4);
+  transition: 0.5s ease;
+
+}
+
+.card img {
+  width: 100%;
+  height: 75%;
+  border-radius: 10px;
+}
+
+.cardInfo {
+  padding: 5px;
+  border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 2px;
+}
+
+.cardInfo h1 {
+  font-size: 1.2vw;
+  padding: 1px;
+}
+
+.cardInfo p {
+  font-size: 1vw;
+  padding: 2px;
+  font-weight: 600;
+}
+
+.cardInfo button {
+  padding: 7px;
+  border-radius: 14px;
+  border: none;
+  margin-top: 3px;
+  font-weight: 600;
+  background-color: #125C13;
+  color: white;
+  font-size: 1vw;
+}
+
+.cardInfo button:hover {
+  background-color: #CDE990;
+  cursor: pointer;
+  transition: 0.1s ease-in;
+}
+
+/*Footer code begins here*/
+
+footer {
+  width: 100%;
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #243D25;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+#footCards {
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+.footCard {
+  width: 22%;
+  min-width: 210px;
+  margin: 5px;
+}
+
+.footCard h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 4px;
+  color: white;
+}
+
+.footCard ul {
+  padding: 4px;
+}
+
+.footCard ul li {
+  list-style: none;
+  padding: 2px;
+}
+
+.footCard ul a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #D8D9CF;
+}
+
+.footCard ul a:hover {
+  color: #fff;
+  font-size: 2.03rem;
+}
+
+#socialMedia {
+  margin: auto;
+  padding: 5px;
+}
+
+#socialMedia a {
+  text-decoration: none;
+}
+
+#socialMedia a i {
+  margin: auto;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 3rem;
+}
+
+#socialMedia a i:hover {
+  color: #CDE990;
+  font-size: 3.1rem;
+}
+
+/* footer code ends here */
+
+.container {
+
+  font-size: 2rem;
+
+}
+
+.container form {
+  padding: 80px 20px 20px 20px;
+}
+
+.container input {
+
+
+  font-size: 2rem;
+
+}
+
+.container button {
+
+
+  font-size: 2rem;
+
+}
+
+/* code for cart */
+#cartHeading {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cartItem {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.cartDetails {
+  width: 40rem;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+#removeItem {
+  color: black;
+  font-size: 2.8rem;
+  margin: 8px 0;
+
+  margin-right: 10px;
+}
+
+#removeItem i:hover {
+  color: red;
+  cursor: pointer;
+}
+
+
+.cartList {
+  position: absolute;
+  margin-right: 0;
+  color: red;
+  right: 0;
+
+}
+
+/* code for cart ends */
+
+/* code for checkout page */
+.addressOptions {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 2rem;
+  width: 100%;
+  line-height: 30px;
+}
+
+.checkoutPageContainer {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-around;
+  padding: 45px;
+
+}
+
+.checkoutDetailsSection {
+  padding: 10px;
+  margin: 10px;
+}
+
+.checkoutDetails {
+  width: 80%;
+  padding: 10px;
+  font-size: 2rem;
+  /* height: 30vh; */
+  border: 1px solid #EFF5F5;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* margin: auto; */
+  margin: 10px 0;
+}
+
+.addressDetails {
+  width: 80%;
+  padding: 20px;
+  font-size: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.addressHeading{
+  font-size: 4rem;
+}
+
+/* code for empty cart */
+
+#emptycart {
+  padding: 20px;
+}
+#emptycart img{
+width: 40%;
+height: 35vw;
+display: flex;
+flex-direction: column;
+margin: auto;
+
+}
+#emptycart h1{
+  text-align: center;
+  font-size: 4rem;
+}
+
+
+
+
+
+.shake-horizontal{-webkit-animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both;animation:shake-horizontal .8s cubic-bezier(.455,.03,.515,.955) both}
+
+
+/*-----------------------------------------------Media Query begins---------------------------------------------------------------*/
+
+@media only screen and (max-width:480px) {
+
+
+
+  #bgImage {
+    height: 36vw;
+  }
+
+  /*Card section begins*/
+  #cardSection {
+    padding: 7px;
+  }
+
+  #cardSection .card {
+    margin: 5px;
+    height: 127vw;
+    width: 100%;
+  }
+
+  #cardSection .card .cardInfo h1 {
+    font-size: 4.9vw;
+  }
+
+  #cardSection .card .cardInfo p {
+    font-size: 4.8vw;
+    margin-bottom: -3px;
+  }
+
+  #cardSection .card .cardInfo button {
+    font-size: 4.5vw;
+  }
+
+
+  #footCards {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .footCard {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  /* cart code begins */
+  .cartDetails {
+    width: 27rem;
+
+  }
+
+  .cartItemsContainer {
+    width: 100%;
+  }
+
+
+
+  /* checkout page code begins */
+  .checkoutPageContainer {
+    padding: 10px;
+  }
+
+  .checkoutPageContainer .addressSection {
+    width: 100%;
+  }
+
+  .checkoutDetails {
+    width: 100%;
+  }
+
+  .addressDetails {
+    width: 100%;
+  }
+
+  .addressHeading {
+    font-size: 3rem;
+  }
+  #emptycart #imagContainer img{
+    width: 94%;
+    height: 80vw;
+ 
+    }
+    #emptycart h1{
+    
+      font-size: 3rem;
+    }
+
+
+}
+
+@media only screen and (max-width:600px) {
+  nav {
+    padding: 1px 5px;
+  }
+
+  #navigation #newNavPages li {
+    padding: 0px 7px;
+  }
+
+  #navigation div p {
+    padding-left: 10px;
+  }
+
+  #bgImage #slogan {
+    font-size: 7vw;
+  }
+
+  .footCard {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width:769px) {
+
+  #navigation {
+    padding: 1px 25px;
+  }
+
+  #navigation div p {
+    font-size: 3rem;
+  }
+
+  #navigation #newNavPages li a {
+    font-size: 2.1rem;
+  }
+
+  #navigation #cart {
+    font-size: 1.6rem;
+  }
+
+  #bgImage {
+    height: 29vw;
+  }
+
+  #bgImage h2 {
+    font-size: 6vw;
+  }
+
+  .card {
+    height: 26vw;
+    margin: 20px;
+  }
+
+  .cardInfo {
+    height: 5vw;
+  }
+
+  .cardInfo h1 {
+    font-size: 2.3vw;
+  }
+
+  .cardInfo p {
+    font-size: 2.1vw;
+    margin-bottom: 0;
+  }
+
+  .cardInfo button {
+    font-size: 1.9vw;
+    padding: 5px;
+  }
+
+  /* code for cartpage */
+  .itemContainer {
+    flex-direction: column;
+    margin-top: 5px;
+  }
+
+  .cartDetails {
+    margin: auto;
+  }
+
+  /* code for checkout page */
+  .checkoutPageContainer {
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .addressSection {
+    width: 70%;
+  }
+
+  .checkoutDetailsSection {
+    width: 100%;
+    margin: auto;
+
+  }
+
+  .checkoutDetails {
+    margin: auto;
+  }
+
+  .addressDetails {
+    /* margin: auto; */
+    margin: 10px auto;
+  }
+
+  /* code for empty cart  */
+  #emptycart img{
+    width: 60%;
+    height: 50vw;
+
+    }
+  
+}
+
+@media only screen and (max-width:840px) {
+  #navigation #newHamburger {
+    display: block;
+    margin-right: 0;
+  }
+
+  #navigation .newNavPages {
+    display: none;
+  }
+
+  #navigation .change {
+    display: block;
+    width: 50%;
+    height: 300px;
+    background-color: #B4E197;
+    padding: 40px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.4s ease;
+    position: absolute;
+    right: 0;
+    top: 64px;
+    z-index: 100;
+  }
+
+  #navigation .icon {
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 21px;
+    height: 42px;
+    padding: 11px 7px 5px 6px;
+  }
+
+  #footCards {
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .container form {
+
+    padding: 80px 5px 5px 5px;
+  }
+}
+
+
+@media only screen and (max-width:1024px) {
+
+  .cardSection {
+    padding: 15px;
+  }
+
+  .cards {
+    width: 98%;
+  }
+
+  .card {
+    margin: 20px;
+    height: 51vw;
+    width: 40%;
+  }
+
+  .cardInfo {
+    padding: 3px;
+    height: 5vw;
+  }
+
+  .cardInfo h1 {
+    font-size: 2vw;
+  }
+
+  .cardInfo p {
+    font-size: 1.9vw;
+  }
+
+  .cardInfo button {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width:1200px) {
+  #footCards {
+    justify-content: space-between;
+  }
+}
+
+
+
+@-webkit-keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}@keyframes shake-horizontal{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}10%,30%,50%,70%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}20%,40%,60%{-webkit-transform:translateX(10px);transform:translateX(10px)}80%{-webkit-transform:translateX(8px);transform:translateX(8px)}90%{-webkit-transform:translateX(-8px);transform:translateX(-8px)}}
